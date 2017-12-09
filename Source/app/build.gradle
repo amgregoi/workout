@@ -1,0 +1,74 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+
+    defaultConfig {
+        applicationId "com.teioh.workout"
+        minSdkVersion 21
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:design:25.3.1'
+
+
+    //Recyclerview
+    compile 'com.android.support:recyclerview-v7:25.3.1'
+
+    compile 'com.android.support:cardview-v7:25.3.1'
+
+
+    compile 'com.jakewharton:butterknife:7.0.1'
+
+    //gson
+    compile 'com.google.code.gson:gson:2.7'
+
+    compile 'com.github.PhilJay:MPAndroidChart:v3.0.3'
+
+    //Recyclerview -> section headers/footers
+    compile 'com.afollestad:sectioned-recyclerview:0.5.0'
+
+
+}
+
+//retrolambda
+buildscript {
+    repositories {
+        mavenCentral()
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'me.tatarka:gradle-retrolambda:3.2.4'
+        classpath 'io.fabric.tools:gradle:1.25.0'
+    }
+}
+
+apply plugin: 'me.tatarka.retrolambda'
+//end retrolambda
+
+// GreenDao
+apply plugin: 'org.greenrobot.greendao'
+
+dependencies {
+    compile 'org.greenrobot:greendao:3.2.0'
+}
+//END GREENDAO

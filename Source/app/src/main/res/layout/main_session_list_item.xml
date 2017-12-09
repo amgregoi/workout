@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+	android:id="@+id/card_view"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:card_view="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:layout_gravity="center"
+	android:background="@color/white"
+	card_view:cardCornerRadius="5dp"
+	>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/white"
+		android:orientation="vertical"
+		android:paddingBottom="@dimen/activity_horizontal_margin_16dp"
+		>
+
+		<TextView
+			android:id="@+id/itemTitleField"
+			android:layout_width="wrap_content"
+			android:layout_height="@dimen/half_line_height_32dp"
+			android:layout_gravity="center_vertical"
+			android:layout_marginLeft="@dimen/baseline_grid_unit_4dp"
+			android:background="@color/white"
+			android:maxLines="2"
+			android:textColor="@android:color/background_dark"
+			android:textSize="12sp"
+			android:textStyle="bold"/>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="horizontal"
+			>
+
+			<TextView
+				android:id="@+id/first_item"
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/half_line_height_32dp"
+				android:layout_gravity="center_vertical"
+				android:layout_marginLeft="@dimen/baseline_grid_unit_4dp"
+				android:background="@color/white"
+				android:maxLines="2"
+				android:layout_weight="1"
+				android:textColor="@android:color/background_dark"
+				android:textSize="15sp"
+				android:textStyle="bold"/>
+
+			<TextView
+				android:id="@+id/first_set_item"
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/half_line_height_32dp"
+				android:layout_alignParentEnd="true"
+				android:layout_alignParentRight="true"
+				android:layout_gravity="center_vertical"
+				android:layout_marginLeft="@dimen/baseline_grid_unit_4dp"
+				android:layout_toRightOf="@id/first_item"
+				android:background="@color/white"
+				android:maxLines="2"
+				android:layout_weight="1"
+				android:textColor="@android:color/background_dark"
+				android:textSize="12sp"
+				android:textStyle="bold"/>
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="horizontal"
+			>
+
+			<TextView
+				android:id="@+id/second_item"
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/half_line_height_32dp"
+				android:layout_gravity="center_vertical"
+				android:layout_marginLeft="@dimen/baseline_grid_unit_4dp"
+				android:background="@color/white"
+				android:maxLines="2"
+				android:textColor="@android:color/background_dark"
+				android:textSize="15sp"
+				android:layout_weight="1"
+				android:textStyle="bold"/>
+
+			<TextView
+				android:id="@+id/second_set_item"
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/half_line_height_32dp"
+				android:layout_alignParentEnd="true"
+				android:layout_alignParentRight="true"
+				android:layout_gravity="center_vertical"
+				android:layout_marginLeft="@dimen/baseline_grid_unit_4dp"
+				android:layout_toRightOf="@id/second_item"
+				android:background="@color/white"
+				android:maxLines="2"
+				android:textColor="@android:color/background_dark"
+				android:textSize="12sp"
+				android:layout_weight="1"
+				android:textStyle="bold"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="horizontal"
+			>
+
+			<TextView
+				android:id="@+id/third_item"
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/half_line_height_32dp"
+				android:layout_gravity="center_vertical"
+				android:layout_marginLeft="@dimen/baseline_grid_unit_4dp"
+				android:background="@color/white"
+				android:maxLines="2"
+				android:textColor="@android:color/background_dark"
+				android:textSize="15sp"
+				android:layout_weight="1"
+				android:textStyle="bold"/>
+
+			<TextView
+				android:id="@+id/third_set_item"
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/half_line_height_32dp"
+				android:layout_gravity="center_vertical"
+				android:layout_marginLeft="@dimen/baseline_grid_unit_4dp"
+				android:background="@color/white"
+				android:maxLines="2"
+				android:textColor="@android:color/background_dark"
+				android:textSize="12sp"
+				android:layout_weight="1"
+				android:textStyle="bold"/>
+
+		</LinearLayout>
+
+		<TextView
+			android:id="@+id/last_item"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:layout_marginLeft="@dimen/baseline_grid_unit_4dp"
+			android:background="@color/white"
+			android:gravity="center_horizontal"
+			android:maxLines="2"
+			android:text="..."
+			android:textColor="@android:color/background_dark"
+			android:textSize="18sp"
+			android:textStyle="bold"/>
+	</LinearLayout>
+</android.support.v7.widget.CardView>
